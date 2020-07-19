@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign in</title>
+    <link rel="stylesheet" href="./signIn.css">
+</head>
+<body>
+
+    <div class="loader">
+        <img src="./img/loader.gif" alt="loading...">
+    </div>
+
+    <div class="topnav">
+        <a href="./index.html" class="previous">&laquo; Back to home</a>
+    </div>
+
+    <div class="container">
+        <h1 class="sign">Sign in</h1>
+            <form action="./index.html" class="example">
+                <ul class="deerty">
+                    <li class="omg">
+                        <input type="text" placeholder="Email, Phone number or username" name="search" id="name"/>
+                        
+                    </li>
+                    <li class="omg">
+                        <input type="password" placeholder="password" name="search" id="myInput" />
+                        <input type="checkbox" onclick="myFunction()" class="pass"><p class="show">Show Password</p>
+                        
+                    </li>
+
+                    <li class="omg">
+                        <input type="checkbox" /><p class="sho">Remember me</p>
+                    </li>
+
+                    <li class="omg">
+                        <input type="submit" value="sign in" id="submit" onclick="transname()">
+                    </li>
+                </ul>
+            </form>
+            <!-- <a href="./Hayat.html">
+                <button  class="buttn">sign in</button>
+            </a> -->
+    
+        <a href="#">
+            <p class="need">need help?</p>
+        </a>
+
+        <span>
+            <p  class="nod">Don't have an account? </p>
+
+        
+            <a href="./signUp.html">
+                <p class="ned">sign up now</p>
+            </a>
+
+        </span>
+        
+    </div>
+
+    </div>
+
+    <footer>
+        <div class="containeer">
+            <div class="back"><img src="./img/haya.jpg" alt="hayat" class="loogoo"></div>
+            <h3 class="mamat">حياة</h3>
+            <p class="media">social media :</p>
+            <ul class="footerTitle">
+                <li class="footerSocial">
+                    <a href="https://twitter.com/hayat_platform" class="social">
+                        <img src="./img/twitter.jpg" alt="twitter" class="pic">
+                    </a>
+                </li>
+                <li class="footerSocial">
+                    <a href="https://https://www.instagram.com/hayat_platform/" class="social">
+                        <img src="./img/instagram.jpg" alt="instagram" class="pics">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p class="pot">
+            Copyright & copy;
+                <script>
+                document.write(new Date().getFullYear());
+                </script>
+            , hayat
+            </p>
+        </div>
+    </footer>
+
+    
+    
+    
+    <script>
+        window.addEventListener("load", function() {
+        const loader = document.querySelector(".loader");
+        loader.className += " hidden";
+    });
+
+    function myFunction() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+        </script>
+
+<script>
+    function passname() {
+      let name = document.getElementById("name").value;
+      localStorage.setItem("textvalue", name);
+      return false;
+    }
+    </script>
+</body>
+</html>

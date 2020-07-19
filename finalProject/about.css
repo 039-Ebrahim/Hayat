@@ -1,0 +1,540 @@
+body {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    background-color: #f3f3f3;
+}
+
+.container {
+    width: 100%;
+    overflow: hidden;
+    margin: 10px auto;
+    background: white;
+}
+
+.photobanner{
+    height: 150px;
+    width: 2535px;
+    font-size: 0;
+}
+
+.photobanner img {
+    padding-right: 10px;
+    height: 150px;
+    width: 250px;
+    margin-right: 5px;
+}
+
+.photobanner img  {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.photobanner img:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    cursor: pointer;
+
+    -webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+}
+/*keyframe animations*/
+.first {
+    -webkit-animation: bannermove 30s linear infinite;
+       -moz-animation: bannermove 30s linear infinite;
+        -ms-animation: bannermove 30s linear infinite;
+         -o-animation: bannermove 30s linear infinite;
+            animation: bannermove 30s linear infinite;
+}
+
+@keyframes bannermove {
+ 0% {margin-left: 0px;}
+ 100% {margin-left: -2125px;}
+}
+
+@-moz-keyframes bannermove {
+ 0% {margin-left: 0px;}
+ 100% {margin-left: -2125px;}
+}
+
+@-webkit-keyframes bannermove {
+ 0% {margin-left: 0px;}
+ 100% {margin-left: -2125px;}
+}
+
+@-ms-keyframes bannermove {
+ 0% {margin-left: 0px;} ;
+ 100% {margin-left: -2125px;};
+
+}
+
+@-o-keyframes bannermove {
+ 0% {margin-left: 0px;};
+ 100% {margin-left: -2125px;};
+}
+
+.topnav {
+    background-color: #074E07;
+    overflow: hidden;
+    margin: 0px;
+    margin-left: -10px;
+    padding: 0px;
+    height: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .logoo {
+    height: 50px;
+    width: 50px;
+    padding-right: 0;
+    border-radius: 8px;
+    padding-left: 5px;
+    padding-top: 0;
+  }
+
+  .topnav .iol {
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 27px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .topnav .iol:hover {
+    background-color: #f3f3f3;
+    color: black;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
+  
+
+  .topnav .iol.active {
+    background-color: rgb(0, 0, 31);
+    color: white;
+  }
+
+  .butoon {
+    background-color: #e9b4d2da;
+    color: black;
+    padding: 12px 32px;
+    padding-top: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    border: 2px solid black;
+    margin-left: 500px;
+    margin-bottom: 40px;
+  }
+  
+  .butoon:hover {
+    background-color: rgb(0, 0, 31);
+    color: #f3f3f3;
+    transition: 0.5s;
+    -webkit-transform: scale(1.09);
+    -ms-transform: scale(1.09);
+    transform: scale(1.09);
+  }
+  
+  .buuton {
+    background-color: #B4C8E9;
+    color: black;
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    border: 2px solid black;
+    margin-bottom: 40px;
+  }
+  
+  .buuton:hover {
+    background-color: rgb(0, 0, 31);
+    color: #f3f3f3;
+    transition: 0.5s;
+    -webkit-transform: scale(1.09);
+    -ms-transform: scale(1.09);
+    transform: scale(1.09);
+  }
+
+  .widad {
+    width: 123px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+  
+  .hanan {
+    display: inline-block;
+  }
+
+  .lool {
+      height: 30%;
+      width: 100%;
+      background-color: #f3f3f3;
+  }
+  .hayat {
+    margin-left: -20px;
+    color: #074E07;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: -5px;
+}
+
+.logo {
+    margin-left: 0px;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.button {
+    border-radius: 4px;
+    background-color: white;
+    border: none;
+    color: black;
+    text-align: center;
+    font-size: 16px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    margin-left: 530px;
+    margin-bottom: 4%;
+    margin-top: 4%;
+  }
+
+  .button:hover {
+      background-color: #074E07;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    transition: 0.5s;
+    text-align: center;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-left: 25px;
+    color: white;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    left: 0;
+  }
+
+  
+.containeer {
+    background-color: #074E07;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  
+  .loogoo {
+    height: 80px;
+    max-width: 100%;
+    margin-top: 10px;
+  }
+  
+  .back {
+    height: 100px;
+    width: 85px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: white;
+    padding-left: 10px;
+  }
+  
+  .mamat {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 500px;
+    padding: 20px;
+  }
+  
+  .media {
+    color: white;
+    font-size: 25px;
+    text-align: right;
+    padding: 20px;
+    margin-left: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  
+  .copyright {
+    height: 50px;
+    margin-top: 0px;
+  }
+  
+  .footerTitle {
+    list-style-type: none;
+    padding: 0;
+    text-align: right;
+    justify-content: right;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+    margin-left: -5px;
+  }
+  
+  .pic {
+    border-radius: 3px;
+    height: 34px;
+    width: 34px;
+    display: inline-flex;
+    padding-right: 8px;
+  }
+  
+  .social:hover {
+    animation: blur 1s ease 0s ;
+    -webkit-animation: blur 1s ease 0s ;
+    -moz-animation: blur 1s ease 0s ;
+  }
+  
+  @keyframes blur {
+    0%,
+    90% {
+      -webkit-filter: blur(0px);
+      -moz-filter: blur(0px);
+      -o-filter: blur(0px);
+      -ms-filter: blur(0px);
+    }
+    50% {
+      -webkit-filter: blur(50px);
+      -moz-filter: blur(50px);
+      -o-filter: blur(50px);
+      -ms-filter: blur(50px);
+    }
+  }
+  
+  
+  .pics {
+    border-radius: 3px;
+    height: 34px;
+    width: 34px;
+    display: inline-flex;
+    padding-left: 8px;
+  }
+  
+  .copyright {
+    background: #f3f3f3;
+    color: black;
+    line-height: 50px;
+    padding: 0 20px;
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 0px;
+    justify-content: center;
+  }
+  .sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #074E07; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  }
+  
+  /* The sidebar links */
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidebar a:hover {
+    color: black;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* The button used to open the sidebar */
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: white;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 0px 20px 5px 0px;
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+  .loader {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .loader > .container {
+    width: 100px;
+  }
+  
+  .loader.hidden {
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+  }
+  
+  
+  @keyframes fadeOut {
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  .about {
+      width: 100%;
+      background-color: gray;
+      height: 50%;
+  }
+  
+  .hayah {
+      color: black;
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+  }
+  
+  .frequent {
+      background-color: #074E07;
+      width: 30%;
+      justify-content: center;
+      color: white;
+      font-size: 25px;
+      display: inline-block;
+      margin-left: 420px;
+      padding: 5px 10px 5px 10px;
+      margin-bottom: 10px;
+  }
+
+  .quest {
+      text-align: right;
+  }
+
+  .smile {
+      width: 55px;
+      height: 50px;
+      display: inline-block;
+      text-align: left;
+      justify-content: left;
+      max-width: 100%;
+      background-color: white;
+      margin-top: 0px;
+  }
+
+  .mor {
+    height: 40px;
+    max-width: 100%;
+    margin-top: 0px;
+  }
+
+  #more{
+      display: none;
+      margin-top: 5px;
+  }
+
+  .ques {
+      font-size: 15px;
+  }
+
+  #siam {
+      display: none;
+  }
+
+  #momen {
+      display: none;
+  }

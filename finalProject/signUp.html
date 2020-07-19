@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+    <link rel="stylesheet" href="./signUp.css">
+</head>
+<body>
+    <div class="loader">
+        <img src="./img/loader.gif" alt="loading...">
+    </div>
+
+    <div class="topnav">
+        <a href="./index.html" class="previous">&laquo; Back to home</a>
+    </div>
+
+    <div class="container">
+        <h1 class="sign">Sign up</h1>
+        <ul class="deerty">
+            <li class="omg">
+                <form class="example">
+                    <input type="text" placeholder="Enter your email address" name="search" />
+                </form>
+            </li>
+            <li class="omg">
+                <form class="example">
+                    <input type="text" placeholder="Enter your phone number" name="search" />
+                </form>
+            </li>
+            <li class="omg">
+                <form class="example">
+                    <input type="text" placeholder="Username" name="search" />
+                </form>
+            </li>
+            <li class="omg">
+                <select class="exampel">
+                    <option value="0" class="holder">Gender:</option>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                  </select>
+            </li>
+        </ul>
+
+        <ul class="derty">
+            <li class="omg">
+                <form class="exam">
+                    <input type="text" placeholder="Enter your email address" name="search" />
+                </form>
+            </li>
+            <li class="omg">
+                <form class="exam">
+                    <input type="date" placeholder="Enter your birthday" name="search" />
+                </form>
+            </li>
+            <li class="omg">
+                <form class="exam">
+                    <input type="password" placeholder="Password" name="search" />
+                </form>
+            </li>
+            <li class="omg">
+                <form class="exam">
+                    <input type="password" placeholder="Confirm password" name="search" />
+                </form>
+            </li>
+        </ul>
+
+        <a href="#">
+            <p class="need">need help?</p>
+        </a>
+
+        <a href="./signIn.html">
+            <button  class="buttn">Create profile</button>
+        </a>
+
+        <a href="./signIn.html">
+            <p class="ned">back to sign in</p>
+        </a>
+    </div>
+
+   
+
+    <footer>
+        <div class="containeer">
+            <div class="back"><img src="./img/haya.jpg" alt="hayat" class="loogoo"></div>
+            <h3 class="mamat">حياة</h3>
+            <p class="media">social media :</p>
+            <ul class="footerTitle">
+                <li class="footerSocial">
+                    <a href="https://twitter.com/hayat_platform" class="social">
+                        <img src="./img/twitter.jpg" alt="twitter" class="pic">
+                    </a>
+                </li>
+                <li class="footerSocial">
+                    <a href="https://https://www.instagram.com/hayat_platform/" class="social">
+                        <img src="./img/instagram.jpg" alt="instagram" class="pics">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p class="pot">
+            Copyright & copy;
+                <script>
+                document.write(new Date().getFullYear());
+                </script>
+            , hayat
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener("load", function() {
+        const loader = document.querySelector(".loader");
+        loader.className += " hidden";
+    });
+    
+        </script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script> -->
+</body>
+</html>
